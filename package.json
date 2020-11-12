@@ -1,7 +1,7 @@
 {
   "name": "ocap-qldb-adapter",
   "title": "QLDB Manager",
-  "version": "0.4.6",
+  "version": "0.5.0",
   "description": "Simple app that serve an OCAP adapter which uses AWS QLDB as backend",
   "keywords": [
     "qldb",
@@ -15,65 +15,10 @@
     "build-debug": "DEBUG=@abtnode/* NODE_ENV=development abtnode bundle -w webpack.blocklet.js"
   },
   "publishConfig": {
-    "access": "public",
-    "directory": "_blocklet/"
+    "access": "public"
   },
-  "files": [
-    "blocklet.js",
-    "blocklet.md",
-    "logo.png",
-    "screenshots",
-    "README.md"
-  ],
   "author": "wangshijun <wangshijun2010@gmail.com> (http://github.com/wangshijun)",
   "license": "MIT",
-  "blocklet": {
-    "group": "dapp",
-    "color": "primary",
-    "main": "index.js",
-    "logo": "logo.png",
-    "provider": "arcblock",
-    "admin_url": "",
-    "config_url": "",
-    "public_url": "/",
-    "doc_url": "",
-    "hooks": {
-      "pre-deploy": "npm run build",
-      "pre-start": "node pre-start.js"
-    },
-    "hookFiles": [
-      "pre-start.js"
-    ],
-    "requiredEnvironments": [
-      {
-        "name": "AWS_ACCESS_KEY_ID",
-        "description": "AWS Access Key ID",
-        "required": true,
-        "default": ""
-      },
-      {
-        "name": "AWS_SECRET_ACCESS_KEY",
-        "description": "AWS Access Secret",
-        "required": true,
-        "default": ""
-      },
-      {
-        "name": "AWS_LEDGER",
-        "description": "QLDB ledger name",
-        "required": false,
-        "default": "ocap-qldb-demo"
-      },
-      {
-        "name": "AWS_REGION",
-        "description": "Which region the ledger is created",
-        "required": false,
-        "default": "us-west-2"
-      }
-    ],
-    "scripts": {
-      "dev": "npm run start"
-    }
-  },
   "dependencies": {
     "@ocap/adapter-qldb": "^0.4.5",
     "@ocap/driver-qldb": "^3.2.0",

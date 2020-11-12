@@ -1,0 +1,46 @@
+name: ocap-qldb-adapter
+description: Simple app that serve an OCAP adapter which uses AWS QLDB as backend
+group: dapp
+version: 0.5.0
+main: index.js
+title: QLDB Manager
+publicUrl: /
+adminUrl: ''
+configUrl: ''
+docUrl: ''
+logo: logo.png
+author: 'wangshijun <wangshijun2010@gmail.com> (http://github.com/wangshijun)'
+charging:
+  price: 0
+color: primary
+keywords:
+  - qldb
+  - adapter
+hooks:
+  pre-deploy: npm run build
+  pre-start: node pre-start.js
+hookFiles:
+  - pre-start.js
+environments:
+  - name: AWS_ACCESS_KEY_ID
+    description: AWS Access Key ID
+    required: true
+    default: ''
+  - name: AWS_SECRET_ACCESS_KEY
+    description: AWS Access Secret
+    required: true
+    default: ''
+  - name: AWS_LEDGER
+    description: QLDB ledger name
+    required: false
+    default: ocap-qldb-demo
+  - name: AWS_REGION
+    description: Which region the ledger is created
+    required: false
+    default: us-west-2
+capabilities:
+  dynamicPathPrefix: true
+scripts:
+  dev: npm run start
+specVersion: 1.0.0
+did: z8iZpWP3gto8RWk9UHfvAaYtqX5wZ3Mz9BrHA
