@@ -22,5 +22,4 @@ forge/graphql-client/lib
 demo-nedb.js
 demo-qldb.js
 .env
-_blocklet
-blocklet.js
+.blocklet
