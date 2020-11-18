@@ -6,6 +6,10 @@ Checkout [./index.js](./index.js) for example code.
 
 To get the example up and running, please following following steps.
 
+## Install on my ABT Node
+
+[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fblocklet.arcblock.io%2Fblocklet%2Fz8iZpWP3gto8RWk9UHfvAaYtqX5wZ3Mz9BrHA.json)
+
 ## 1. Get Your AWS Access Key/Secret
 
 https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started.nodejs.html
