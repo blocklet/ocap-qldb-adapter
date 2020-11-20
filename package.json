@@ -9,10 +9,13 @@
   ],
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf .blocklet",
     "start": "DEBUG=@ocap/*,@arcblock/arcblock* node index.js",
     "prepublishOnly": "npm run build",
-    "build": "DEBUG=@abtnode/* NODE_ENV=production abtnode bundle -w webpack.blocklet.js",
-    "build-debug": "DEBUG=@abtnode/* NODE_ENV=development abtnode bundle -w webpack.blocklet.js"
+    "build": "DEBUG=@abtnode/* NODE_ENV=production an bundle -w webpack.blocklet.js --create-release",
+    "build-debug": "DEBUG=@abtnode/* NODE_ENV=development abtnode bundle -w webpack.blocklet.js",
+    "release": "npm run clean && npm run build",
+    "deploy": "npm run release && an deploy .blocklet/bundle --skip-hooks"
   },
   "publishConfig": {
     "access": "public"
