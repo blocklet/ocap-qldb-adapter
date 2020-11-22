@@ -11,8 +11,8 @@
     "clean": "rm -rf .blocklet",
     "start": "DEBUG=@ocap/*,@arcblock/arcblock* node index.js",
     "prepublishOnly": "npm run build",
-    "build": "NODE_ENV=production an bundle --zip --create-release",
-    "build-debug": "DEBUG=@abtnode/* NODE_ENV=development abtnode bundle --zip",
+    "build": "NODE_ENV=production an bundle --create-release",
+    "build-debug": "DEBUG=@abtnode/* NODE_ENV=development an bundle",
     "release": "npm run clean && npm run build",
     "deploy": "npm run release && an deploy .blocklet/bundle"
   },
