@@ -1,8 +1,9 @@
+did: z8iZpWP3gto8RWk9UHfvAaYtqX5wZ3Mz9BrHA
 name: ocap-qldb-adapter
 description: Simple app that serve an OCAP adapter which uses AWS QLDB as backend
 group: dapp
 version: 0.6.0
-main: index.js
+main: lib/index.js
 title: QLDB Manager
 author:
   name: wangshijun
@@ -15,17 +16,23 @@ keywords:
   - qldb
   - adapter
 screenshots: []
+files:
+  - lib/hooks/pre-start.js
+interfaces:
+  - name: publicUrl
+    type: web
+    path: '/'
 environments:
   - name: AWS_ACCESS_KEY_ID
     description: AWS Access Key ID
     required: true
     default: ''
-    secure: false
+    secure: true
   - name: AWS_SECRET_ACCESS_KEY
     description: AWS Access Secret
     required: true
     default: ''
-    secure: false
+    secure: true
   - name: AWS_LEDGER
     description: QLDB ledger name
     required: false
@@ -37,13 +44,6 @@ environments:
     default: us-west-2
     secure: false
 scripts:
-  preDeploy: npm run build
-  preStart: node pre-start.js
+  preStart: node lib/hooks/pre-start.js
   dev: npm run start
 specVersion: 1.0.1
-color: primary
-capabilities:
-  dynamicPathPrefix: true
-charging:
-  price: 0
-did: z8iZpWP3gto8RWk9UHfvAaYtqX5wZ3Mz9BrHA
