@@ -1,22 +1,22 @@
 name: ocap-qldb-adapter
 title: QLDB Manager
-version: 0.6.0
+version: 0.6.1
 description: Simple app that serve an OCAP adapter which uses AWS QLDB as backend
 keywords:
   - qldb
   - adapter
-files:
-  - lib/hooks/pre-start.js
-  - blocklet.md
-  - README.md
 author:
   name: wangshijun
   email: wangshijun2010@gmail.com
   url: 'http://github.com/wangshijun'
+license: Apache-2.0
+files:
+  - lib/hooks/pre-start.js
+  - blocklet.md
+  - README.md
 repository:
   type: git
-  url: 'https://github.com/blocklet/ocap-qldb-example'
-license: Apache-2.0
+  url: 'git+https://github.com/blocklet/ocap-qldb-example.git'
 group: dapp
 main: lib/index.js
 community: ''
@@ -55,6 +55,9 @@ did: z8iZpWP3gto8RWk9UHfvAaYtqX5wZ3Mz9BrHA
 interfaces:
   - name: publicUrl
     type: web
-    path: '/'
+    path: /
+    prefix: '*'
+    protocol: tcp
+    port: BLOCKLET_PORT
 timeout:
   start: 10
