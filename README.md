@@ -6,6 +6,10 @@ Checkout [./index.js](./index.js) for example code.
 
 To get the example up and running, please following following steps.
 
+## Install on my ABT Node
+
+[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Focap-qldb-example%2Freleases%2Fdownload%2F0.6.2%2Fblocklet.json)
+
 ## 1. Get Your AWS Access Key/Secret
 
 https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started.nodejs.html
