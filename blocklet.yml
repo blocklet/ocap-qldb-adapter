@@ -1,6 +1,6 @@
 name: ocap-qldb-adapter
 title: QLDB Manager
-version: 0.6.1
+version: 0.6.2
 description: Simple app that serve an OCAP adapter which uses AWS QLDB as backend
 keywords:
   - qldb
@@ -49,8 +49,6 @@ scripts:
   preStart: node lib/hooks/pre-start.js
   dev: npm run start
 specVersion: 1.0.1
-capabilities:
-  dynamicPathPrefix: true
 did: z8iZpWP3gto8RWk9UHfvAaYtqX5wZ3Mz9BrHA
 interfaces:
   - name: publicUrl
