@@ -1,7 +1,7 @@
 {
   "name": "ocap-qldb-adapter",
   "title": "QLDB Manager",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Simple app that serve an OCAP adapter which uses AWS QLDB as backend",
   "keywords": [
     "qldb",
@@ -11,10 +11,10 @@
     "clean": "rm -rf .blocklet",
     "start": "DEBUG=@ocap/*,@arcblock/arcblock* node index.js",
     "prepublishOnly": "npm run build",
-    "build": "NODE_ENV=production abtnode bundle --create-release",
-    "build-debug": "DEBUG=@abtnode/* NODE_ENV=development abtnode bundle",
+    "build": "NODE_ENV=production blocklet bundle --create-release",
+    "build-debug": "DEBUG=@abtnode/* NODE_ENV=development blocklet bundle",
     "release": "npm run clean && npm run build",
-    "deploy": "npm run release && abtnode deploy .blocklet/bundle"
+    "deploy": "npm run release && blocklet deploy .blocklet/bundle"
   },
   "publishConfig": {
     "access": "public"
