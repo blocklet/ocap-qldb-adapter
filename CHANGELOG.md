@@ -1,3 +1,8 @@
+## 0.6.3 (January 08, 2021)
+
+- replace abtnode command with blocklet command
+- [skip ci] Update README.md
+
 ## 0.6.2 (November 24, 2020)
 
 
