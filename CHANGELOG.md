@@ -1,3 +1,8 @@
+## 0.6.4 (January 14, 2021)
+
+- feat: support publish to blocklet registry
+- [skip ci] Update README.md
+
 ## 0.6.3 (January 08, 2021)
 
 - replace abtnode command with blocklet command
