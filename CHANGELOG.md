@@ -1,3 +1,8 @@
+## 0.6.5 (January 15, 2021)
+
+- [skip ci] fix typo
+- [skip ci] Update README.md
+
 ## 0.6.4 (January 14, 2021)
 
 - feat: support publish to blocklet registry
