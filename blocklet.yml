@@ -1,6 +1,6 @@
 name: ocap-qldb-adapter
 title: QLDB Manager
-version: 0.6.5
+version: 0.6.6
 description: Simple app that serve an OCAP adapter which uses AWS QLDB as backend
 keywords:
   - qldb
@@ -63,3 +63,8 @@ requirements:
   abtnode: '>=1.1.0'
   os: '*'
   cpu: '*'
+charging:
+  price: 0
+  tokens: []
+  shares: []
+children: []

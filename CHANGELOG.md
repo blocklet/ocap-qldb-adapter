@@ -1,3 +1,7 @@
+## 0.6.6 (April 08, 2021)
+
+- [skip ci] Update README.md
+
 ## 0.6.5 (January 15, 2021)
 
 - [skip ci] fix typo
